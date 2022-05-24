@@ -16,9 +16,9 @@
 </p>
 
 <p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/LeoScripts" target="_blank">Author</a>
+  <a href="#dart-about">Sobre</a> &#xa0; | &#xa0; 
+  <a href="#memo-license">Licença</a> &#xa0; | &#xa0;
+  <a href="https://github.com/LeoScripts" target="_blank">Autor</a>
 </p>
 
 <br>
