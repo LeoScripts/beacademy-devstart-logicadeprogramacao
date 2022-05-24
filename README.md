@@ -1,6 +1,5 @@
 <div align="center" id="top"> 
   <img src="./.github/app.gif" alt="Beacademy Devstart Logicadeprogramacao" />
-
   &#xa0;
 </div>
 
