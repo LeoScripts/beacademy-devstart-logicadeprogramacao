@@ -3,7 +3,7 @@
   &#xa0;
 </div>
 
-<h1 align="center">Beacademy Devstart Logicadeprogramacao</h1>
+<h1 align="center">Beacademy Devstart Logica de programacao</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/LeoScripts/beacademy-devstart-logicadeprogramacao?color=56BEB8">
@@ -24,16 +24,16 @@
 <br>
 
 ## :dart: About ##
+Repositorio contendo arquivos com exercicios executados no modulo de logica de programação
 
-Describe your project
 
 ## :memo: License ##
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+repositorio está sobre a lincença MIT. Para mais detalhes consultar o arquivo [LICENSE](LICENSE.md).
 
 
-Made with :heart: by <a href="https://github.com/LeoScripts" target="_blank">Leandro Cavalcante</a>
+Desenvolvido por <a href="https://github.com/LeoScripts" target="_blank">Leandro Cavalcante</a>
 
 &#xa0;
 
-<a href="#top">Back to top</a>
+<a href="#top">Voltar pro top</a>
