@@ -1,0 +1,36 @@
+Var
+   produto: vetor [0..3] de caractere
+   preco: vetor [0..3 , 0..3] de real
+   i,x,tamanho:inteiro
+   diagPrincipal,diagSecundario: real
+
+Inicio
+   para i<- 0 ate 3 faca
+      escreva("Digite nome do ",i,"produto: ")
+      leia(produto[i])
+      para x <-0 ate 3 faca
+         escreva("Digite ",x,"preco do produto: ")
+         leia(precio[i,x])
+      fimpara
+   fimpara
+
+    para i<- 0 ate 3 faca
+      para x <- 0 ate 3 faca
+       se (i = x) entao
+        diagPrincipal <- diagPrincipal + preco[i,x]
+       fimse
+      fimpara
+    fimpara
+    
+    para i<- 0 ate 3 faca
+     tamanho <- 4
+      para x <- 0 ate 3 faca
+       se ((i + x) = (tamanho -1)) entao
+        diagSecundario <- diagSecundario + preco[i,x]
+       fimse
+      fimpara
+    fimpara
+    
+      escreval("Resultado da suma do valors da diagonal principal: ",diagPrincipal)
+      escreval("Resultado da suma do valors da diagonal secundario: ",diagSecundario)
+Fim

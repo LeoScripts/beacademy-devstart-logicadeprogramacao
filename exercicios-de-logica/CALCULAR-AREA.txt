@@ -1,0 +1,39 @@
+Var
+
+   figuraGeometrica:caractere
+   ladoQ,ladoT,alturaT,perimetro,area:real
+
+Inicio
+
+   escreval("Selecione a figura geometrica desejada, sendo Q para quadrado e T para triangulo equilatero: ")
+   leia(figuraGeometrica)
+    escolha figuraGeometrica
+       caso "Q"
+            escreval("Voce escolheu o quadrado!")
+            escreval("Digite a medida de um de seus lados: ")
+            leia(ladoQ)
+            perimetro:= ladoQ * 4
+            area:= ladoQ * ladoQ
+       caso "T"
+            escreval("Voce escolheu o triangulo equilatero!")
+            escreval("Digite a medida do lado do triangulo")
+            leia(ladoT)
+            alturaT:= ((ladoT * 1.73)/2)
+            area:= ((ladoT * alturaT)/2)
+            perimetro:= ladoT*3
+       outrocaso
+                perimetro:= -1
+                area:= -1
+    fimescolha
+    se((perimetro = -1) e (area = -1))entao
+                  escreval("")
+                  escreval("Figura nao disponivel, tente novamente")
+                  senao
+                       escreval("")
+                       escreval("Resultado: ")
+                       escreval("Area = ",area,"cm")
+                       escreval("Perimetro = ",perimetro,"cm")
+
+    fimse
+
+Fim

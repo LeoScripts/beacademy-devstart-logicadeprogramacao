@@ -1,0 +1,31 @@
+Var
+aluno: vetor [1..5] de caractere
+nota1: vetor [1..5] de inteiro
+nota2: vetor [1..5] de inteiro
+i: inteiro
+media:real
+estado:caractere
+
+Inicio
+ para i <- 1 ate 5 faca
+  escreva("Digite o nome do aluno: ")
+  leia(aluno[i])
+  escreva("Digite 1ª nota do aluno: ")
+  leia(nota1[i])
+  escreva("Digite 2ª nota do aluno: ")
+  leia(nota2[i])
+ fimpara
+ para i <- 1 ate 5 faca
+  media <- (nota1[i] + nota2[i])/2
+  se(media <= 6)entao
+    estado <- "Reprovado"
+    senao
+    estado <- "Aprovado"
+  fimse
+  escreval("")
+  escreval("Nome: ",aluno[i])
+  escreval("Media: ",media)
+  escreval("Estado: ",estado)
+ fimpara
+
+Fim

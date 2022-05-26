@@ -1,0 +1,73 @@
+Var
+   valor1,valor2,resultado:real
+   operacao:caractere
+
+
+Inicio
+   
+   escreval("Digite un valor: ")
+   leia(valor1)
+   escreval("Digite una operacao: ")
+   leia(operacao)
+   escreval("Digite outro valor: ")
+   leia(valor2)
+   
+   escolha operacao
+      caso "+"
+      resultado := valor1 + valor2
+      caso "-"
+      resultado := valor1 - valor2
+      caso "*"
+      resultado := valor1 * valor2
+      caso "/"
+      resultado := valor1 / valor2
+   outrocaso
+      resultado := -1
+   fimescolha
+   se(resultado = -1)entao
+      escreva("Operacao incorreta, tente novamente.")
+   senao
+      escreva("Resultado: ",resultado)
+   fimse
+
+Fim
+
+// ex:2 -------------------------------------------------
+
+Var
+   numero1,numero2,resultado:real
+   x,ops:caractere
+
+Inicio
+      x <- "sim"
+   enquanto x = "sim" faca
+      escreval("Digite um numero")
+      leia(numero1)
+      escreval("Digite a operacao: ")
+      leia(ops)
+      escreval("Digite outro numero")
+      leia(numero2)
+
+      escolha ops
+         caso "+"
+              resultado<- numero1 + numero2
+              escreval(numero1," +", numero2," =",resultado)
+         caso "-"
+              resultado<- numero1 - numero2
+              escreval(numero1," -", numero2," =",resultado)
+         caso "/"
+              resultado<- numero1 / numero2
+              escreval(numero1," /", numero2," =",resultado)
+         caso "*"
+              resultado<- numero1 * numero2
+              escreval(numero1," *", numero2," =",resultado)
+         outrocaso
+              escreval("Operacaoo incorreta.")
+      fimescolha
+      escreval("")
+      escreval("Deseja realizar outra operacao?")
+      leia(x)
+      escreval("")
+   fimenquanto
+
+Fim

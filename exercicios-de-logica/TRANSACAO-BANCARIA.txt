@@ -1,0 +1,138 @@
+Var
+
+   nome,operacao,extracao,deposito,banco: caractere
+   saldoInicial,valor,saldoFinal,agencia,conta:real
+
+Inicio
+   escreva("Digite seu nome: ")
+   leia(nome)
+   escreval("")
+   escreval(nome," seja bem-vindo(a) a sua conta da Paylivre!!!")
+   escreval("Seu saldo em conta e de R$2756,75.")
+   escreval("")
+   escreval("Digite a operacao a ser executada: ")
+   escreval("Sendo D para depositos, S para saques ou T para transferencias.")
+   leia(operacao)
+
+   saldoInicial <- 2756.75;
+
+   escolha operacao
+       caso "D"
+          escreval("Digite o valor a ser depositado: ")
+          leia(valor)
+          saldoFinal:= saldoInicial + valor
+          operacao:= "Deposito"
+       caso "S"
+            escreval("Digite o valor do saque: ")
+            leia(valor)
+            saldoFinal:= saldoInicial - valor
+            operacao:= "Saque"
+       caso "T"
+            escreval("Digite o valor da transferencia: ")
+            leia(valor)
+            escreval("Digite o nome do Banco: ")
+            leia(banco)
+            escreval("Digite numero de agencia:")
+            leia(agencia)
+            escreval("Digite numero de conta:")
+            leia(conta)
+            saldoFinal:= saldoInicial - valor
+            operacao:= "Transferencia"
+            escreval("")
+            escreval("Transferencia realizada com sucesso.")
+            escreval("Dados do destinatario: ")
+            escreval("Banco: ",banco)
+            escreval("Agencia N: ",agencia)
+            escreval("Conta N: ",conta)
+       outrocaso
+         saldofinal:= saldoInicial
+   fimescolha
+
+    se(saldoFinal = saldoInicial)entao
+          escreval("")
+          escreval("No foi possivel realizar sua operacao, tente novamente.")
+          senao
+            escreval("")
+            escreval("Saldo inicial: R$",saldoInicial)
+            escreval("Valor de ",operacao,": R$",valor)
+            escreval("Saldo Final: R$",saldoFinal)
+            escreval("")
+            escreval("Obrigado pela sua escolha :)")
+    fimse
+
+Fim
+
+// ex:2 -------------------------------------------------------------------------------
+
+Var
+  nome,operacao,extracao,deposito,banco,ops: caractere
+   saldoInicial,valor,saldoFinal,agencia,conta:real
+   numOps,numVariavel:inteiro
+
+Inicio
+   saldoInicial <- 2756.75;
+   escreva("Digite seu nome: ")
+   leia(nome)
+   escreval("")
+   escreval(nome," seja bem-vindo(a) a sua conta da Paylivre!!!")
+   escreval("")
+   escreval ("Digite quantas operacoes desja realizar:")
+   leia(numOps)
+   escreval("")
+   para numVariavel de 1 ate numOps passo 1 faca
+        escreval("Seu saldo em conta e de R$",saldoInicial,".")
+        escreval("")
+        escreval("Digite a operacao a ser executada: ")
+        escreval("Sendo D para depositos, S para saques ou T para transferencias.")
+        leia(operacao)
+
+      escolha operacao
+          caso "D"
+             escreval("Digite o valor a ser depositado: ")
+             leia(valor)
+             saldoFinal:= saldoInicial + valor
+             ops:= "Deposito"
+             operacao:=""
+          caso "S"
+               escreval("Digite o valor do saque: ")
+               leia(valor)
+               saldoFinal:= saldoInicial - valor
+               ops:= "Saque"
+               operacao:=""
+          caso "T"
+               escreval("Digite o valor da transferencia: ")
+               leia(valor)
+               escreval("Digite o nome do Banco: ")
+               leia(banco)
+               escreval("Digite numero de agencia:")
+               leia(agencia)
+               escreval("Digite numero de conta:")
+               leia(conta)
+               saldoFinal:= saldoInicial - valor
+               ops:= "Transferencia"
+               operacao:=""
+               escreval("")
+               escreval("Transferencia realizada com sucesso.")
+               escreval("Dados do destinatario: ")
+               escreval("Banco: ",banco)
+               escreval("Agencia N: ",agencia)
+               escreval("Conta N: ",conta)
+          outrocaso
+            saldofinal:= saldoInicial
+      fimescolha
+
+       se(saldoFinal = saldoInicial)entao
+             escreval("")
+             escreval("No foi possivel realizar sua operacao, tente novamente.")
+             senao
+               escreval("")
+               escreval("Saldo inicial: R$",saldoInicial)
+               escreval("Valor de ",ops,": R$",valor)
+               escreval("Saldo Final: R$",saldoFinal)
+               escreval("")
+               escreval("Obrigado pela sua escolha :)")
+               escreval("")
+               saldoInicial <- saldoFinal
+       fimse
+   fimpara
+Fim

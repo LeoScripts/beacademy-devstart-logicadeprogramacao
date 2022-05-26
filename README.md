@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Beacademy Devstart Logicadeprogramacao" />
+  <!-- <img src="./.github/app.gif" alt="Beacademy Devstart Logicadeprogramacao" /> -->
   &#xa0;
 </div>
 
@@ -26,6 +26,31 @@
 ## :dart: About ##
 Repositorio contendo arquivos com exercicios executados no modulo de logica de programação
 
+## Requisitos
+- 1 - [ :heavy_check_mark: ] Criar o README.md
+- 2 - [ :heavy_check_mark: ] ter exercios do modulo de logica de programação
+
+## Exercicios
+
+[CADASTRO-ALUNO-VETOR](./exercicios-de-logica/CADASTRO-ALUNO-VETOR.txt)
+[CADASTRO-ALUNO](./exercicios-de-logica/CADASTRO-ALUNO.txt)
+[CADASTRO-CLIENTE-VETOR](./exercicios-de-logica/CADASTRO-CLIENTE-VETOR.txt)
+[CALCULADORA](./exercicios-de-logica/CALCULADORA.txt)
+[CALCULAR-AREA](./exercicios-de-logica/CALCULAR-AREA.txt)
+[CALCULO-DIAGONAL](./exercicios-de-logica/CALCULO-DIAGONAL.txt)
+[EMPRESTIMO](./exercicios-de-logica/EMPRESTIMO.txt)
+[IMC](./exercicios-de-logica/IMC.txt)
+[MOVIMENTACAO-CONTA](./exercicios-de-logica/MOVIMENTACAO-CONTA.txt)
+[MULTIPLOS-DOIS](./exercicios-de-logica/MULTIPLOS-DOIS.txt)
+[MULTIPLOS-TRES](./exercicios-de-logica/MULTIPLOS-TRES.txt)
+[PLANILLA](./exercicios-de-logica/PLANILLA.txt)
+[PRODUTOS-VETOR](./exercicios-de-logica/PRODUTOS-VETOR.txt)
+[SAQUES](./exercicios-de-logica/SAQUES.txt)
+[SOMAR-NUMEROS](./exercicios-de-logica/SOMAR-NUMEROS.TXT)
+[TABUADAS](./exercicios-de-logica/TABUADAS.txt)
+[TRANSACAO-BANCARIA](./exercicios-de-logica/TRANSACAO-BANCARIA.txt)
+[VALIDACAO-SENHA](./exercicios-de-logica/VALIDACAO-SENHA.txt)
+[VERIFICA-IDADE](./exercicios-de-logica/VERIFICAR-IDADE.txt)
 
 ## :memo: License ##
 

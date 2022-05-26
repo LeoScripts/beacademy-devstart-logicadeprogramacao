@@ -1,0 +1,35 @@
+Var
+ nome:vetor [1..5] de caractere
+ cpf:vetor [1..5] de caractere
+ rg :vetor [1..5] de inteiro
+ endereco:vetor [1..5] de caractere
+ telefone:vetor [1..5] de inteiro
+ i:inteiro
+
+Inicio
+   para i <- 1 ate 5 faca
+    escreva("Digite nome do cliente: ")
+    leia(nome[i])
+    escreva("Digite CPF do cliente: ")
+    leia(cpf[i])
+    escreva("Digite RG do cliente: ")
+    leia(rg[i])
+    escreva("Digite endereco do cliente: ")
+    leia(endereco[i])
+    escreva("Digite telefone do cliente: ")
+    leia(telefone[i])
+    escreval("")
+   fimpara
+    para i <- 1 ate 5 faca
+         escreval("Dados do cliente ",i,": ")
+         escreval("Nome: ",nome[i])
+         escreval("CPF: ",cpf[i])
+         escreval("RG: ",rg[i])
+         escreval("Endereco: ",endereco[i])
+         escreval("Telefone: ",telefone[i])
+         escreval("")
+    fimpara
+
+
+
+Fim

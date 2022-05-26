@@ -1,0 +1,13 @@
+Var
+multiplos:inteiro
+
+Inicio
+      escreval("Multiplos de 2: ")
+      escreval("")
+      para multiplos de 0 ate 100 passo 1 faca
+       se (multiplos % 2 = 0)entao
+           escreval(multiplos)
+       fimse
+      fimpara
+
+Fim
